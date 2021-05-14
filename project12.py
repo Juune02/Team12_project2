@@ -19,7 +19,7 @@ search_btn.send_keys(Keys.ENTER)
 
 
 driver.get(url = driver.current_url)
-channel = driver.find_element_by_class_name("style-scope ytd-channel-name")
+channel = driver.find_element_by_xpath('//*[@id="img"]')
 channel.click()
 driver.get(url = driver.current_url)
 subscriber = driver.find_element_by_xpath('//*[@id="subscriber-count"]')
