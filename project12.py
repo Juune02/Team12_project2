@@ -16,3 +16,11 @@ search_box = driver.find_element_by_name("search_query")
 search_box.send_keys(string)
 search_btn=driver.find_element_by_class_name("style-scope ytd-searchbox")
 search_btn.send_keys(Keys.ENTER)
+
+
+driver.get(url = driver.current_url)
+channel = driver.find_element_by_class_name("style-scope ytd-channel-name")
+channel.click()
+driver.get(url = driver.current_url)
+subscriber = driver.find_element_by_xpath('//*[@id="subscriber-count"]')
+print(subscriber.text)
